@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
     />
-    <title>Interactive Avatar Demo</title>
+    <title>TALIC Workshop HeyGen Avatar API Demo</title>
   </head>
 
   <body>
@@ -16,7 +16,7 @@
       class="container"
       style="display: flex; flex-direction: column; align-items: center"
     >
-      <h1>Interactive Avatar Demo (Vite + TypeScript)</h1>
+      <h1>TALIC Workshop HeyGen Avatar API Demo</h1>
 
       <!-- Video Section -->
       <article style="width: fit-content">
@@ -34,10 +34,14 @@
           <input
             type="text"
             id="userInput"
-            placeholder="Type something to talk to the avatar..."
+            placeholder="Type something to the avatar to speak..."
             aria-label="User input"
           />
           <button id="speakButton" role="button">Speak</button>
+          <select id="interactionMode" style="width: 200px;">
+            <option value="speak">Speak</option>
+            <option value="chat">Chat</option>
+          </select>
         </section>
 
         <!-- New API Key input section -->
@@ -51,6 +55,16 @@
           <button id="setApiKeyButton" role="button">Set API Key</button>
           <button id="editApiKeyButton" role="button" disabled>Edit API Key</button>
         </section>
+      </section>
+      
+      <section>
+        <h2>Instructions:</h2>
+        <ul>
+          <li>Type in the Text box your HEYGEN API key and click 'set API' button</li>
+          <li>Click 'Start Session' button to start the session</li> 
+          <li>Select the mode you want to use</li> 
+          <li>Type in the Text box what you want the avatar to say and click 'Speak' button</li>
+        </p>
       </section>
     </main>
 
